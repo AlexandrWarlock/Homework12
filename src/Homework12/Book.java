@@ -1,27 +1,28 @@
+package Homework12;
+
 public class Book {
        private String name;
        private int publisherYear;
-       private String nameAuthor;
-       private String surnameAuthor;
-    public Book (String name, int publisherYear, String nameAuthor, String surnameAuthor) {
+       private Author author;
+
+    public Book (String name, int publisherYear, Author author) {
         this.name = name;
         this.publisherYear = publisherYear;
-        this.nameAuthor = nameAuthor;
-        this.surnameAuthor = surnameAuthor;
+        this.author = author;
     }
     public String getName() {
+
         return this.name;
     }
     public int getPublisherYear() {
+
         return this.publisherYear;
     }
     public void setPublisherYear(int publisherYear) {
+
         this.publisherYear = publisherYear;
     }
-    public String getNameAuthor() {
-        return this.nameAuthor;
-    }
-    public String getSurnameAuthor() {
-        return this.surnameAuthor;
+    public Author getAuthor (){
+        return this.author;
     }
 }
